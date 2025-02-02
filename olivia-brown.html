@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olivia Brown - Nail Artist</title>
+  
+  <!-- Bootstrap 5 CSS for responsiveness -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('images/nailsalon.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+    }
+
+    /* Stylish Navigation Bar */
+    .navbar {
+      width: 100%;
+      background: rgba(205, 65, 65, 0.9);
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar h1 {
+      margin: 0;
+      font-size: 1.8rem; /* Adjusted for consistent typography */
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: #fff;
+      padding: 8px 15px;
+      background: #ff6666;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .navbar a:hover {
+      background: #ff9999;
+      transform: translateY(-3px);
+    }
+
+    .container {
+      text-align: center;
+      padding: 120px 20px; /* Adjust padding for navbar */
+      background: rgba(249, 236, 236, 0.95);
+      border-radius: 20px;
+      margin: 100px auto; /* Ensure content is not hidden under fixed navbar */
+      max-width: 900px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .profile-image {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 6px solid #cd4141;
+      margin: 20px auto;
+    }
+
+    h1 {
+      font-size: 2.6rem; /* Adjusted for consistent typography */
+      margin: 20px 0;
+      color: #cd4141;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+
+    h2 {
+      margin-top: 20px;
+      font-size: 1.6rem;
+      color: #cd4141;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+      font-weight: 500;
+    }
+
+    p {
+      font-size: 1.2rem; /* Adjusted for consistent typography */
+      line-height: 1.6;
+      color: #444;
+      margin-top: 15px;
+      font-weight: 400;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 30px 0;
+    }
+
+    ul li {
+      font-size: 1.2rem;
+      margin: 12px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    ul li i {
+      margin-right: 10px;
+      color: #cd4141;
+      font-size: 1.4rem;
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 25px;
+      font-size: 1.1rem;
+      color: #fff;
+      background: #cd4141;
+      text-decoration: none;
+      border-radius: 25px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    /* Gallery Swiper Styles for Mobile Responsiveness */
+    .gallery-swiper {
+      height: 50vh; /* Default height */
+    }
+
+    @media (max-width: 1200px) {
+      .gallery-swiper {
+        height: 45vh;
+      }
+    }
+
+    @media (max-width: 992px) {
+      .gallery-swiper {
+        height: 40vh;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .gallery-swiper {
+        height: 35vh;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .gallery-swiper {
+        height: 30vh;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Stylish Navigation Bar -->
+  <div class="navbar">
+    <h1>Olivia Brown</h1>
+    <a href="index.html">Back to Home</a>
+  </div>
+
+  <div class="container">
+    <img src="images/Brown & White Modern Facebook Profile Picture .png" alt="Olivia Brown" class="profile-image">
+    <h1>Olivia Brown</h1>
+    <p><strong>Specialty:</strong> Nail Artist, Spa Treatments</p>
+    <h2>About Olivia</h2>
+    <p>
+      Olivia is a professional nail artist with a keen eye for detail and a passion for creating stunning nail designs. She combines creativity and expertise to deliver exceptional services, including manicures, pedicures, and spa treatments.
+    </p>
+    <h2>Services</h2>
+    <ul>
+      <li><i class="fas fa-paint-brush"></i> Manicure & Pedicure</li>
+      <li><i class="fas fa-hand-sparkles"></i> Gel Nails</li>
+      <li><i class="fas fa-spa"></i> Spa Treatments</li>
+    </ul>
+    <a href="mailto:olivia@stylists.com" class="cta-button">Contact Olivia</a>
+  </div>
+  <footer>
+    © 2024 Olivia Brown. All rights reserved.
+  </footer>
+
+  <!-- Bootstrap 5 JS for added functionality -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
